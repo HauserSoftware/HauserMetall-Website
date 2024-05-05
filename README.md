@@ -81,7 +81,7 @@ Documentation and list of available classes can be found here:https://tailwindcs
 
 NextUi is a UI library that provides pre-styled accessible components for Next.js. Usage:
 
-1. `npm install -g nextui`
+1. `npm install -g nextui-cli`
 2. `nextui add ${component}`
 
 Import the component in your files and style them with Tailwind if necessary
