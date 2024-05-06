@@ -28,9 +28,9 @@ export default function LocaleLayout({
 }) {
   return (
     <html lang={locale}>
-      <body className="dark text-foreground bg-background">
+      <body className="light text-foreground bg-background">
         <Providers locale={locale}>
-          <Navbar />
+          <Navbar locale={locale} />
           <main>{children}</main>
         </Providers>
       </body>

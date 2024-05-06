@@ -5,7 +5,7 @@ const config: Config = {
   content: [
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './node_modules/@nextui-org/theme/dist/components/(button|navbar|ripple|spinner).js',
+    './node_modules/@nextui-org/theme/dist/components/(button|link|navbar|ripple|spinner).js',
   ],
   theme: {
     extend: {},
@@ -16,8 +16,8 @@ const config: Config = {
       themes: {
         light: {
           colors: {
-            primary: '#0b3961',
-            secondary: '#13c6e4',
+            secondary: '#0b3961',
+            primary: '#13c6e4',
           },
         },
         dark: {

@@ -5,5 +5,12 @@
   "Metadata": {
     "title": "Hauser Metall",
     "description": "Website of the Hauser Metall company"
+  },
+  "Navbar": {
+    "home": "HOME",
+    "inspirations": "INSPIRATIONS",
+    "career": "CAREER",
+    "about": "ABOUT US",
+    "contact": "CONTACT"
   }
 }

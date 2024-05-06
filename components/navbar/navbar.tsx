@@ -3,28 +3,45 @@ import {
   Navbar as NextUiNavbar,
   NavbarBrand,
   NavbarContent,
-  NavbarItem,
 } from '@nextui-org/navbar';
-import { Button } from '@nextui-org/button';
+import Image from 'next/image';
+import { useTranslations } from 'next-intl';
+import NavbarItem from '@/components/navbar/navbarItem';
 
-export default function Navbar() {
+const navbarItemList: string[] = [
+  'home',
+  'inspirations',
+  'career',
+  'about',
+  'contact',
+];
+
+interface NavbarProps {
+  locale: string;
+}
+
+export default function Navbar({ locale }: NavbarProps) {
+  const t = useTranslations('Navbar');
   return (
-    <NextUiNavbar>
+    <NextUiNavbar isBordered>
       <NavbarBrand>
-        <p className="font-bold text-inherit">ACME</p>
+        <Image
+          src={'/brand.png'}
+          alt={'Brand'}
+          width={150}
+          height={50}
+          priority
+        />
       </NavbarBrand>
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarItem>First Nav</NavbarItem>
-        <NavbarItem isActive>Second Nav</NavbarItem>
-        <NavbarItem>Third Nav</NavbarItem>
-      </NavbarContent>
-      <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <Button color="primary">Nav Action 1</Button>
-        </NavbarItem>
-        <NavbarItem>
-          <Button color="secondary">Nav Action 2</Button>
-        </NavbarItem>
+      <NavbarContent className="hidden sm:flex gap-5" justify="center">
+        {navbarItemList.map((item) => (
+          <NavbarItem
+            link={`/${locale}${item === 'home' ? '' : `/${item}`}`}
+            translatedText={t(item)}
+            isHomePage={item === 'home'}
+            key={item}
+          />
+        ))}
       </NavbarContent>
     </NextUiNavbar>
   );
