@@ -17,13 +17,13 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@nextui-org/button": "2.0.31",
-    "@nextui-org/link": "2.0.29",
-    "@nextui-org/navbar": "2.0.30",
+    "@nextui-org/button": "2.0.37",
+    "@nextui-org/link": "2.0.34",
+    "@nextui-org/navbar": "2.0.36",
     "@nextui-org/system": "2.1.2",
-    "@nextui-org/theme": "2.2.3",
+    "@nextui-org/theme": "2.2.9",
     "framer-motion": "11.1.7",
-    "next": "14.2.1",
+    "next": "14.2.5",
     "next-intl": "3.11.3",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -33,20 +33,20 @@
     "@commitlint/config-conventional": "19.2.2",
     "@semantic-release/commit-analyzer": "12.0.0",
     "@semantic-release/github": "10.0.3",
-    "@semantic-release/npm": "12.0.0",
+    "@semantic-release/npm": "12.0.1",
     "@semantic-release/release-notes-generator": "13.0.0",
     "@types/node": "20.12.7",
     "@types/react": "18.2.78",
     "@types/react-dom": "18.2.25",
     "eslint": "8.57.0",
-    "eslint-config-next": "14.2.1",
+    "eslint-config-next": "14.2.5",
     "eslint-config-prettier": "9.1.0",
     "husky": "9.0.11",
-    "lint-staged": "15.2.2",
+    "lint-staged": "15.2.7",
     "postcss": "8.4.38",
     "prettier": "3.2.5",
     "semantic-release": "23.0.8",
-    "tailwindcss": "3.4.3",
+    "tailwindcss": "3.4.6",
     "typescript": "5.4.5"
   }
 }
